@@ -11,6 +11,10 @@ const routes: Routes = [
     loadChildren: () => import('../app/module/profile/profile.module').then((x) => x.ProfileModule),
   },
   {
+    path: 'profile/update',
+    loadChildren: () => import('../app/module/profile/update/update.module').then((x) => x.UpdateModule),
+  },
+  {
     path: 'admin',
     loadChildren: () => import('../app/module/admin/dashboard/dashboard.module').then((x) => x.DashboardModule),
   }
