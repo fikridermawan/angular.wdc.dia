@@ -1,9 +1,9 @@
 export class MataKuliah {
-    kode: number = 0;
+    kode: string = "";
     namaMatkul: string = "";
     sks: number = 0;
 
-    setKode(kode: number){
+    setKode(kode: string){
         this.kode = kode;
     }
     setNamaMatkul(namaMatkul: string){
@@ -13,7 +13,7 @@ export class MataKuliah {
         this.sks = sks;
     }
 
-    getKode(): number {
+    getKode(): string {
         return this.kode;
     }
     getNamaMatkul(): string {

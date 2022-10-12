@@ -1,0 +1,22 @@
+<p>profile works!!</p>
+<app-textinput [model]="text" (onChange)="setToTextParent($event)"></app-textinput>
+<app-table></app-table>
+<app-button></app-button>
+<app-card></app-card>
+
+<table>
+    <tr>
+        <td>NIM :</td>
+        <td>{{profileService.nim}}</td>
+    </tr>
+    <tr>
+        <td>Nama :</td>
+        <td>{{profileService.nama}}</td>
+    </tr>
+    <tr>
+        <td>Umur :</td>
+        <td>{{profileService.umur}}</td>
+    </tr>
+</table>
+
+<button (click)="clear()">Clear</button>

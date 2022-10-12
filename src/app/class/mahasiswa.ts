@@ -1,9 +1,9 @@
 export class Mahasiswa {
-    nim: number = 0;
+    nim: string = "";
     nama: string = "";
     jenisKelamin: string = "";
 
-    setNim(nim: number){
+    setNim(nim: string){
         this.nim = nim;
     }
     setNama(nama: string){
@@ -13,7 +13,7 @@ export class Mahasiswa {
         this.jenisKelamin = jenisKelamin;
     }
 
-    getNim(): number {
+    getNim(): string {
         return this.nim;
     }
     getNama(): string {

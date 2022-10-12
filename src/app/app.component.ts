@@ -20,7 +20,7 @@ export class AppComponent {
   constructor() {
     const MahasiwaA = new Mahasiswa();
 
-    MahasiwaA.setNim(1811501285);
+    MahasiwaA.setNim("1811501285");
     MahasiwaA.setNama("Fikri Dermawan");
     MahasiwaA.setJenisKelamin("Laki-laki");
 
@@ -30,7 +30,7 @@ export class AppComponent {
 
     const MahasiwaB = new Reguler();
 
-    MahasiwaB.setNim(1811501234);
+    MahasiwaB.setNim("1811501234");
     MahasiwaB.setNama("Putra");
     MahasiwaB.setJenisKelamin("Laki-laki");
 
@@ -40,7 +40,7 @@ export class AppComponent {
 
     const MahasiwaC = new Karyawan();
 
-    MahasiwaC.setNim(1811505678);
+    MahasiwaC.setNim("1811505678");
     MahasiwaC.setNama("Putri");
     MahasiwaC.setJenisKelamin("Perempuan");
 
@@ -50,7 +50,7 @@ export class AppComponent {
 
     const DosenA = new Dosen();
 
-    DosenA.setNip(11001);
+    DosenA.setNip("11001");
     DosenA.setNama("Gunawan");
     DosenA.setJenisKelamin("Laki-laki");
 
@@ -60,7 +60,7 @@ export class AppComponent {
 
     const DosenB = new Tetap();
 
-    DosenB.setNip(22002);
+    DosenB.setNip("22002");
     DosenB.setNama("Imelda");
     DosenB.setJenisKelamin("Perempuan");
 
@@ -70,7 +70,7 @@ export class AppComponent {
 
     const DosenC = new Honorer();
 
-    DosenC.setNip(33003);
+    DosenC.setNip("33003");
     DosenC.setNama("Alexander");
     DosenC.setJenisKelamin("Laki-laki");
 
@@ -80,7 +80,7 @@ export class AppComponent {
 
     const MatkulA = new MataKuliah();
 
-    MatkulA.setKode(1111);
+    MatkulA.setKode("MK11");
     MatkulA.setNamaMatkul("Bahasa Inggris");
     MatkulA.setSks(3);
 
@@ -90,7 +90,7 @@ export class AppComponent {
     
     const MatkulB = new Wajib();
 
-    MatkulB.setKode(2222);
+    MatkulB.setKode("MK22");
     MatkulB.setNamaMatkul("Algoritma dan Struktur Data");
     MatkulB.setSks(4);
 
@@ -100,7 +100,7 @@ export class AppComponent {
 
     const MatkulC = new Pilihan();
 
-    MatkulC.setKode(3333);
+    MatkulC.setKode("MK33");
     MatkulC.setNamaMatkul("Bahasa Inggris Lanjutan");
     MatkulC.setSks(2);
 

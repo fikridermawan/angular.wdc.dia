@@ -1,9 +1,9 @@
 export class Dosen {
-    nip: number = 0;
+    nip: string = "";
     nama: string = "";
     jenisKelamin: string = "";
 
-    setNip(nip: number){
+    setNip(nip: string){
         this.nip = nip;
     }
     setNama(nama: string){
@@ -13,7 +13,7 @@ export class Dosen {
         this.jenisKelamin = jenisKelamin;
     }
 
-    getNip(): number {
+    getNip(): string {
         return this.nip;
     }
     getNama(): string {
