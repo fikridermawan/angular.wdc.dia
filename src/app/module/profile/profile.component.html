@@ -1,4 +1,39 @@
-<p>profile works!!</p>
+<div class="sidebar">
+    <input class="search-sidebar" type="text" placeholder="Search"/> <button class="search-button">Search</button>
+    <h3 class="list-header">New Post</h3>
+    <ul class="sidebar-list">
+      <li>List 1</li>
+      <li>List 2</li>
+      <li>List 3</li>
+      <li>List 4</li>
+    </ul>
+    <h3 class="list-header">Populer Post</h3>
+    <ul class="sidebar-list">
+      <li>List 1</li>
+      <li>List 2</li>
+      <li>List 3</li>
+      <li>List 4</li>
+    </ul>
+  </div>     
+  
+  <div class="header">
+    <nav class="menu-container">
+      <div class="menu">Home</div>
+      <div class="dropdown">
+        <a class="menu" href="http://localhost:4200/profile">Profile</a>
+        <div class="dropdown-content">
+          <a href="http://localhost:4200/profile/update">Profil Update</a>
+        </div>
+      </div> 
+      <a class="menu" href="http://localhost:4200/admin">Admin</a>
+      <div class="menu">Search</div>
+      <div class="menu">Logout</div>
+    </nav>
+  </div>
+  
+  <div class="content-container">
+    <div class="content-box">
+        <p>profile works!!</p>
 <app-textinput [model]="text" (onChange)="setToTextParent($event)"></app-textinput>
 <app-table></app-table>
 <app-button></app-button>
@@ -20,3 +55,9 @@
 </table>
 
 <button (click)="clear()">Clear</button>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>Copyright Fikri Dermawan</p>
+  </div>

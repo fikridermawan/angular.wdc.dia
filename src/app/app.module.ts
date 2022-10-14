@@ -3,20 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeModule } from './module/home/home.module';
 import { LoginModule } from './module/login/login.module';
 import { ProfileModule } from './module/profile/profile.module';
-import { UpdateComponent } from './services/update/update/update.component';
+import { UpdateComponent } from './module/profile/update/update.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    UpdateComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ProfileModule,
     LoginModule,
+    HomeModule
     
   ],
   providers: [],
