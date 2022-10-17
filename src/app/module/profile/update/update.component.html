@@ -6,7 +6,15 @@
         </div>
         <div class="form-group">
             <div>Email</div>
-            <div><input formControlName="email" class="input" type="email" placeholder="Masukan Email"></div>
+            <div>
+                <input formControlName="email" class="input" type="email" placeholder="Masukan Email">
+            </div>
+            <div *ngIf="formGroupUpdate.controls['email'].valid">
+                <span style="color: green;">Email Valid</span>
+            </div>
+            <div *ngIf="!formGroupUpdate.controls['email'].valid">
+                <span style="color: red;">Email Tidak Valid</span>
+            </div>
         </div>
         <div class="form-group">
             <div>Tanggal Lahir</div>
@@ -18,6 +26,15 @@
         </div>
         <div class="btn-update">
             <button (click)="submitButtonClick()" type="button" class="form-button">Update</button>
+        </div>
+        <div class="btn-update">
+            <button (click)="checkValidation()" type="button" class="form-button">Check Validation</button>
+        </div>
+        <div class="btn-update">
+            <button (click)="checkValidation()" type="button" class="form-button">getMethod</button>
+        </div>
+        <div class="btn-update">
+            <button (click)="submitPost()" type="button" class="form-button">postMethod</button>
         </div>
     </form>
 </div>

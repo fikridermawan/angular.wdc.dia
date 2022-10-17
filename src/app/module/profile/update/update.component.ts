@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { UpdateService } from 'src/app/services/auth/update.service';
 
 @Component({
   selector: 'app-update',
@@ -14,13 +15,15 @@ export class UpdateComponent implements OnInit {
   displayAlamat: any;
 
   formGroupUpdate = new FormGroup({
-    nama: new FormControl("Fikri Dermawan"),
-    email: new FormControl("Fikri@gmail.com"),
-    tanggallahir: new FormControl("2018-10-11"),
-    alamat: new FormControl("Kota Tangerang")
+    nama: new FormControl(""),
+    email: new FormControl("", [Validators.required, Validators.email]),
+    tanggallahir: new FormControl(""),
+    alamat: new FormControl("")
   });
 
-  constructor() { 
+  constructor(
+    private readonly updateService: UpdateService
+  ) { 
 
     this.displayNama = this.formGroupUpdate.controls["nama"].value;
     this.displayEmail = this.formGroupUpdate.controls["email"].value;
@@ -32,10 +35,32 @@ export class UpdateComponent implements OnInit {
   }
 
   submitButtonClick() {
+
     this.displayNama = this.formGroupUpdate.controls["nama"].value;
     this.displayEmail = this.formGroupUpdate.controls["email"].value;
     this.displayTanggalLahir = this.formGroupUpdate.controls["tanggallahir"].value;
     this.displayAlamat = this.formGroupUpdate.controls["alamat"].value;
+  }
+
+  checkValidation() {
+    alert(this.formGroupUpdate.controls["email"].valid);
+  }
+  
+   submitPost() {
+
+    if(this.formGroupUpdate.valid) {
+      this.updateService.postUpdate(this.formGroupUpdate.value).subscribe(
+        (respose) => {
+          alert('Succes')
+          alert(JSON.stringify(respose));
+        },
+        (error) => {
+          alert(JSON.stringify(error));
+        }
+      )
+    } else {
+      alert('Form Not Valid');
+    }
   }
 
 }

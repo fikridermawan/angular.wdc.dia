@@ -1,63 +1,76 @@
-<div class="sidebar">
-    <input class="search-sidebar" type="text" placeholder="Search"/> <button class="search-button">Search</button>
-    <h3 class="list-header">New Post</h3>
-    <ul class="sidebar-list">
-      <li>List 1</li>
-      <li>List 2</li>
-      <li>List 3</li>
-      <li>List 4</li>
-    </ul>
-    <h3 class="list-header">Populer Post</h3>
-    <ul class="sidebar-list">
-      <li>List 1</li>
-      <li>List 2</li>
-      <li>List 3</li>
-      <li>List 4</li>
-    </ul>
-  </div>     
-  
-  <div class="header">
-    <nav class="menu-container">
-      <div class="menu">Home</div>
-      <div class="dropdown">
-        <a class="menu" href="http://localhost:4200/profile">Profile</a>
-        <div class="dropdown-content">
-          <a href="http://localhost:4200/profile/update">Profil Update</a>
+<app-topbar></app-topbar>
+<app-sidebar></app-sidebar>
+
+<div class="main-content">
+  <div class="body-content">
+    <div class="bg-center">
+      <div class="container-trans">
+      <img src="assets/image/foto-profile.jpg" class="img-profile">
+      <h2>Fikri Dermawan</h2>
+      <h5>Fresh Graduate at Budi Luhur University</h5>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <hr>
+      </div>
+    </div>
+    <div class="profile-career">
+      <h3>Pengalaman</h3>
+      <div class="content-flex">
+        <div class="col1">
+          <img src="assets/image/logo-vm.jpg" class="img-logo">
         </div>
-      </div> 
-      <a class="menu" href="http://localhost:4200/admin">Admin</a>
-      <div class="menu">Search</div>
-      <div class="menu">Logout</div>
-    </nav>
-  </div>
-  
-  <div class="content-container">
-    <div class="content-box">
-        <p>profile works!!</p>
-<app-textinput [model]="text" (onChange)="setToTextParent($event)"></app-textinput>
-<app-table></app-table>
-<app-button></app-button>
-<app-card></app-card>
-
-<table>
-    <tr>
-        <td>NIM :</td>
-        <td>{{profileService.nim}}</td>
-    </tr>
-    <tr>
-        <td>Nama :</td>
-        <td>{{profileService.nama}}</td>
-    </tr>
-    <tr>
-        <td>Umur :</td>
-        <td>{{profileService.umur}}</td>
-    </tr>
-</table>
-
-<button (click)="clear()">Clear</button>
+        <div class="col2">
+          <h5><b>Posisi</b>, Nama Perusahaan</h5>
+          <h6><b>Jenis Pekerjaan</b>, Tanggal Mulai - Tanggal Akhir</h6>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+      </div>
+      <hr>
+      <h3>Pendidikan</h3>
+      <div class="content-flex">
+        <div class="col1">
+          <img src="assets/image/logo-vm.jpg" class="img-logo">
+        </div>
+        <div class="col2">
+          <h5><b>Universitas Budi Luhur</b>, Teknik Informatika</h5>
+          <h6><b>Bachelor degree</b>, Tanggal Mulai - Tanggal Akhir</h6>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+      </div>
+      <hr>
+      <h3>Skill</h3>
+      <div class="content-flex">
+        <div class="col1">
+          <img src="assets/image/logo-vm.jpg" class="img-logo">
+        </div>
+        <div class="col2">
+          <h5><b>PHP</b></h5>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+      </div>
+      <hr>
+      <h3>Sertifikat</h3>
+      <div class="content-flex">
+        <div class="col1">
+          <img src="assets/image/logo-vm.jpg" class="img-logo">
+        </div>
+        <div class="col2">
+          <h5><b>Nama Sertfikat</b></h5>
+          <h6><b>Nama Pemberi Sertifikat</b>, Tanggal didapatkan</h6>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+      </div>
+      <hr>
     </div>
   </div>
-  
-  <div class="footer">
-    <p>Copyright Fikri Dermawan</p>
-  </div>
+  <app-footer></app-footer>
+</div>

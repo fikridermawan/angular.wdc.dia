@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ComponentModule } from './component/component.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -14,7 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
   exports: [
     ComponentModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ]
 })
 export class SharedModule { }

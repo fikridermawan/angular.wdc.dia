@@ -6,10 +6,11 @@
 
     "responseBody": {
         "user_id": "DIA0003",
-        "username": "user.dia3",
-        "name": "Tom",
-        "age": 17,
-        "job": "Java Developer"
+        "username": "user.dia",
+        "name": "FIkri",
+        "emai": "fikri@gmail.com",
+        "tanggallahir": "2022-01-01",
+        "alamat": "tangerang"
     }
 
 }

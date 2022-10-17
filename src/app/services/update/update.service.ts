@@ -12,7 +12,7 @@ export class UpdateService {
   ) { }
 
   postUpdate(body: any) {
-    this.http.post("http://localhost:4200/profile/update", body).subscribe(
+    this.http.post("dev/profile/update", body).subscribe(
       //next
       (response) => {
         alert(JSON.stringify(response));

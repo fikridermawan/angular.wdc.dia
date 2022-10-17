@@ -1,0 +1,36 @@
+.body-content {
+    margin: 20px;
+    margin-bottom: 60px;
+    background: white;
+    padding-bottom: 5px;
+}
+.img-bg {
+    width: 100%;
+}
+.content {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-align: center;
+}
+.column-flex {
+    margin: 10px;
+    width: 23%;
+}
+.card-title {
+    text-align: center; 
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+.card-text {
+    font-size: x-small;
+    text-align: justify;
+}
+.content-update {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
