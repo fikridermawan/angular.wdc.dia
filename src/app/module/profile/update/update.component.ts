@@ -46,7 +46,7 @@ export class UpdateComponent implements OnInit {
     alert(this.formGroupUpdate.controls["email"].valid);
   }
   
-   submitPost() {
+  submitPost() {
 
     if(this.formGroupUpdate.valid) {
       this.updateService.postUpdate(this.formGroupUpdate.value).subscribe(
@@ -62,5 +62,21 @@ export class UpdateComponent implements OnInit {
       alert('Form Not Valid');
     }
   }
+  // submitGet() {
+
+  //   if(this.formGroupUpdate.valid) {
+  //     this.updateService.getUpdate(this.formGroupUpdate.value).subscribe(
+  //       (respose) => {
+  //         alert('Succes')
+  //         alert(JSON.stringify(respose));
+  //       },
+  //       (error) => {
+  //         alert(JSON.stringify(error));
+  //       }
+  //     )
+  //   } else {
+  //     alert('Form Not Valid');
+  //   }
+  // }
 
 }

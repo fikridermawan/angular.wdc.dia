@@ -6,10 +6,10 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './module/home/home.module';
 import { LoginModule } from './module/login/login.module';
 import { ProfileModule } from './module/profile/profile.module';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LayoutsModule } from './core/layouts/layouts.module';
 import { JobListModule } from './module/job-list/job-list.module';
 import { JobUpdateModule } from './module/job-update/job-update.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [

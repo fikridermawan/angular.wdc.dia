@@ -13,6 +13,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CommonModule
   ],
   exports: [
+    // ComponentModule,
+    // ReactiveFormsModule,
+    // HttpClientModule,
+    // NgbModule
     ComponentModule,
     ReactiveFormsModule,
     HttpClientModule,
